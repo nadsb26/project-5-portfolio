@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Nada's Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="desktop" id="desktop">
+
+        <!-- about me folder -->
+        <div class="folder-center" id="center-folder" title="About Me">
+            <img src="assets/blueFolder.png" alt="About Me folder">
+            <span class="center-label">(about me)</span>
+        </div>
+
+        <div class="title-text">
+            <span class="cursive">Nada's</span>
+            <span class="bold">portfolio</span>
+        </div>
+
+        <!-- project folders -->
+        <div class="item" id="f-blue">
+            <img class="folder-icon" src="assets/coralFolder.png" alt="Project 1">
+            <span class="label">project 01</span>
+        </div>
+        <div class="item" id="f-pink">
+            <img class="folder-icon" src="assets/pinkFolder.png" alt="Project 2">
+            <span class="label">project 02</span>
+        </div>
+        <div class="item" id="f-yellow">
+            <img class="folder-icon" src="assets/yellowFolder.png" alt="Project 3">
+            <span class="label">project 03</span>
+        </div>
+        <div class="item" id="f-purple">
+            <img class="folder-icon" src="assets/purpleFolder.png" alt="Project 4">
+            <span class="label">project 04</span>
+        </div>
+
+        <!-- app icons -->
+        <div class="item" id="app-ps">
+            <img class="app-icon" src="assets/photoshop.png" alt="Photoshop">
+            <span class="label">photoshop</span>
+        </div>
+        <div class="item" id="app-ai">
+            <img class="app-icon" src="assets/illustrator.png" alt="Illustrator">
+            <span class="label">illustrator</span>
+        </div>
+        <div class="item" id="app-pr">
+            <img class="app-icon" src="assets/premierePro.png" alt="Premiere Pro">
+            <span class="label">premiere pro</span>
+        </div>
+        <div class="item" id="app-au">
+            <img class="app-icon" src="assets/audacity.png" alt="Audacity">
+            <span class="label">audacity</span>
+        </div>
+        <div class="item" id="app-vs">
+            <img class="app-icon" src="assets/visualStudio.png" alt="VS Code">
+            <span class="label">vs code</span>
+        </div>
+
+        <!-- photo popup -->
+        <template id="tpl-photo">
+            <img src="assets/me.JPG" alt="Photo of Nada" class="photo-img">
+        </template>
+
+        <!-- c++ code popup -->
+        <template id="tpl-code">
+    <div class="code-block"><span class="c-kw">#include</span> <span class="c-str">&lt;iostream&gt;</span>
+<span class="c-kw">#include</span> <span class="c-str">&lt;string&gt;</span>
+<span class="c-kw">#include</span> <span class="c-str">&lt;vector&gt;</span>
+
+<span class="c-kw">class</span> <span class="c-type">Nada</span> {
+<span class="c-kw">public:</span>
+
+    string name  = <span class="c-str">"Nada"</span>;
+    string major = <span class="c-str">"Computer Science"</span>;
+    string year  = <span class="c-str">"Junior"</span>;
+
+};</div>
+</template>
+
+        <!-- hobbies popup -->
+        <template id="tpl-hobbies">
+            <div class="sticky-note">
+                <p class="sticky-note">things i love:</p>
+                <ul class="hobby-list">
+                    <li><span class="hobby-icon">🧩</span> jigsaw puzzles</li>
+                    <li><span class="hobby-icon">🔢</span> sudoku</li>
+                    <li><span class="hobby-icon">🔤</span> word search</li>
+                    <li><span class="hobby-icon">✈️</span> travelling</li>
+                    <li><span class="hobby-icon">🛍️</span> shopping</li>
+                    <li><span class="hobby-icon">🪡</span> cross-stitching</li>
+                </ul>
+            </div>
+        </template>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
