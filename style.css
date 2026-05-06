@@ -358,3 +358,45 @@ body {
     color: #f5f0ea;
     border-color: #2b1a10;
 }
+
+/* mobile responsiveness */
+@media (max-width: 600px) {
+
+    /* scale down the big title */
+    .title-text .cursive { font-size: 52px; }
+    .title-text .bold    { font-size: 68px; }
+
+    /* smaller center folder */
+    .folder-center img { width: 200px; }
+    .center-label      { font-size: 20px; }
+
+    /* reposition project folders into the four corners */
+    #f-blue   { top: 5%;    left: 4%;  }
+    #f-pink   { bottom: 8%; left: 4%;  }
+    #f-yellow { top: 5%;    right: 4%; }
+    #f-purple { bottom: 8%; right: 4%; }
+
+    /* stack app icons along the bottom strip */
+    #app-ps { bottom: 22%; left:  2%; top: auto; }
+    #app-ai { bottom: 22%; right: 2%; top: auto; }
+    #app-pr { bottom: 2%;  left:  2%; top: auto; right: auto; }
+    #app-au { bottom: 2%;  left: 50%; transform: translateX(-50%); top: auto; right: auto; }
+    #app-vs { bottom: 2%;  right: 2%; top: auto; left: auto; }
+
+    /* slightly smaller icons so they fit */
+    .item img.folder-icon { width: 72px; }
+    .item img.app-icon    { width: 54px; }
+
+    /* popup windows: full-width, scrollable, positioned near top */
+    .popup-window {
+        width: 92vw !important;
+        left: 4vw !important;
+        top: 60px !important;
+        max-height: 75vh;
+        overflow-y: auto;
+    }
+
+    .popup-body {
+        max-height: 60vh;
+    }
+}
